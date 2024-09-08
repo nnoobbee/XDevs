@@ -1,0 +1,29 @@
+@import url("_normalize.css");
+@import url("top.css");
+@import url("Unitary.css");
+@import url("services.css");
+@import url("coreteam.css");
+@import url("techStack.css");
+@import url("thustedBy.css");
+@import url("contactUs.css");
+@import url("footer.css");
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  font-family: 'Gordita', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #303030;
+  max-width: 1400px;
+  margin: 0 auto;
+}

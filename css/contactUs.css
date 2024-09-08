@@ -1,0 +1,116 @@
+.contactUs{
+  max-width: 1400px;
+  height: 580px;
+  margin: 0 auto;
+  background: rgba(24, 24, 24, 1); 
+}
+
+.contactUs__head-text{
+  color: #FFFF;
+}
+
+.contactUs__svgBox{
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(84, 85, 90, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs__inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactUs__boxInner{
+  display: flex;
+}
+
+.contactUs__contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactUs__head-svg{
+  width: 50px;
+  height: 50px;
+}
+
+.contactUs__head-text{
+  margin: 10px 0;
+}
+
+.contactUs__boxText-title{
+  margin: 0;
+  color: #FFFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.5px;
+}
+
+.contactUs__boxText-subTitle{
+  margin: 0;
+  color: rgba(84, 85, 90, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.65px;
+}
+
+.contactUs__contacts{
+  margin-right: 30px;
+}
+
+.contactUs__boxText{
+  text-align: right;
+}
+
+.contactUs__contacts-networks{
+  display: flex;
+  margin: 0 0px 0px;
+  gap: 15px;
+}
+
+.contactUs__background{
+  background: url(../images/Rectangle.png);
+  opacity: 1;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 900px){
+  .contactUs__inner{
+    flex-direction: column;
+  }
+  .contactUs__boxInner {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 720px){
+  .contactUs__contacts-networks {
+    gap: 10px;
+  }
+  .contactUs__contacts {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 520px){
+  .contactUs__svgBox {
+    width: 170px;
+    height: 261px;
+  }
+  .contactUs__contacts-networks {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .contactUs__svgBox img {
+    width: 160px;
+  }
+}
