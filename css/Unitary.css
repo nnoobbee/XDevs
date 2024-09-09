@@ -1,24 +1,26 @@
-li{
+li {
   font-weight: 400;
   font-size: 18px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 .container,
-.container-b{
+.container-b {
   position: relative;
   max-width: 1200px;
-  height: 100%;
+  width: 100%;
   margin: 0 auto;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* .main-stripe_first_ligth */
+
 .mainColum_1,
-.mainColum_1-b{
+.mainColum_1-b {
   width: 33%;
   height: 100%;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -27,7 +29,7 @@ a{
 }
 
 .mainColum_2,
-.mainColum_2-b{
+.mainColum_2-b {
   width: 67%;
   height: 100%;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -36,41 +38,45 @@ a{
 }
 
 .container-b {
-  border-left: 1px solid  rgba(255, 255, 255, 0.1);;
-  border-right: 1px solid  rgba(255, 255, 255, 0.1);;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  ;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  ;
 }
 
 .mainColum_1-b {
-  border-right: 1px solid  rgba(255, 255, 255, 0.1);;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  ;
 }
 
 .mainColum_2-b {
-  border-right: 1px solid  rgba(255, 255, 255, 0.1);;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  ;
 }
 
-.head-Unitary{
+.head-Unitary {
   display: flex;
   gap: 15px;
   margin-bottom: 40px;
 }
 
-.inner-Unitary{
+.inner-Unitary {
   padding: 80px 0 100px;
 }
 
-.head-text-Unitary{
+.head-text-Unitary {
   font-size: 30px;
   font-weight: 400;
 }
 
-@media (max-width: 1240px){
-  .inner-Unitary{
+@media (max-width: 1240px) {
+  .inner-Unitary {
     padding: 70px 20px 100px 20px;
   }
 }
 
-@media (max-width: 520px){
-  .head-Unitary{
+@media (max-width: 520px) {
+  .head-Unitary {
     justify-content: center;
   }
 }

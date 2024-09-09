@@ -1,6 +1,6 @@
 
 .top{
-  background-image: url(../images/Background-top.jpg);
+  background-image: url(../images/Background-top.jpg), no-repeat, cover, center center;
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
