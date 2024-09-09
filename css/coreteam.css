@@ -1,11 +1,11 @@
-.coreteam{
+.coreteam {
   max-width: 1400px;
   height: 720px;
   margin: 0 auto;
-  background: rgba(24, 24, 24, 1); 
+  background: rgba(24, 24, 24, 1);
 }
 
-.coreteam__background{
+.coreteam__background {
   background: url(../images/Rectangle.png);
   opacity: 1;
   height: 100%;
@@ -14,26 +14,26 @@
   background-position: center center;
 }
 
-.coreteam__head{
+.coreteam__head {
   margin-bottom: 50px;
 }
 
-.coreteam__head-text{
+.coreteam__head-text {
   color: #fff;
 }
 
-.coreteam__tabs{
+.coreteam__tabs {
   display: flex;
   justify-content: space-between;
 }
 
-.coreteam__tab{
+.coreteam__tab {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.coreteam__tab-box{
+.coreteam__tab-box {
   width: 277px;
   height: 320px;
   border: 1px solid rgba(84, 85, 90, 1);
@@ -43,21 +43,23 @@
   align-items: flex-end;
 }
 
-.coreteam__tab-visege{
+.coreteam__tab-visege {
   width: 216px;
   height: 250px;
 }
+
 .coreteam__tab-title {
   color: rgba(255, 255, 255, 1);
   font-size: 20px;
   margin-bottom: 7px;
 }
+
 .coreteam__tab-subtitle {
   font-size: 18px;
   color: rgba(84, 85, 90, 1);
 }
 
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -76,8 +78,9 @@
   -moz-user-select: none;
   user-select: none;
 }
-.modal__wrapper{
-position: absolute;
+
+.modal__wrapper {
+  position: absolute;
   z-index: 100;
   display: inline-block;
   box-sizing: border-box;
@@ -96,7 +99,7 @@ position: absolute;
   transform: translate(-50%, -50%)
 }
 
-.modal__overlay{
+.modal__overlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -107,11 +110,11 @@ position: absolute;
   opacity: .5;
 }
 
-.cr__modal{
+.cr__modal {
   display: flex;
 }
 
-.modal__text{
+.modal__text {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -122,38 +125,38 @@ position: absolute;
   text-align: left;
 }
 
-.modal__text-name{
+.modal__text-name {
   color: #fff;
   margin: 0;
   margin: 0 0 10px
 }
 
-.modal__text-position{
+.modal__text-position {
   color: rgba(118, 119, 126, 1);
   margin: 0;
   margin: 0 0 30px
 }
 
-.modal__text-description{
+.modal__text-description {
   color: rgba(118, 119, 126, 1);
   margin: 0;
 }
 
-.modal__wrapper-svg{
+.modal__wrapper-svg {
   position: absolute;
   right: 30px;
   top: 30px;
   cursor: pointer;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .coreteam__tab-box {
     width: 248px;
     height: 274px;
   }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
   .coreteam__tabs {
     display: flex;
     max-width: 100%;
@@ -162,18 +165,20 @@ position: absolute;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .coreteam {
     height: 950px;
     height: auto;
   }
 }
 
-@media (max-width: 900px){
-  .cr__modal{
+@media (max-width: 900px) {
+  .cr__modal {
     flex-direction: column;
     align-items: center;
   }
-  .modal__text{
+
+  .modal__text {
     flex-direction: column;
     margin-left: 0px;
     margin-top: 15px;
@@ -181,45 +186,51 @@ position: absolute;
   }
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
   .coreteam__tab-box {
     width: 230px;
     height: 261px;
   }
-  .modal__wrapper{
+
+  .modal__wrapper {
     padding: 30px
   }
-  .modal__text{
+
+  .modal__text {
     width: auto;
   }
 }
 
-@media (max-width: 520px){
+@media (max-width: 520px) {
   .coreteam__tab {
     align-items: center;
   }
+
   .coreteam__tab-box {
     justify-content: center;
   }
-  .modal__wrapper{
+
+  .modal__wrapper {
     max-width: 100%;
   }
-  .modal__wrapper{
+
+  .modal__wrapper {
     padding: 10px
   }
 }
 
-@media (max-width: 400px){
-  .coreteam__imner{
+@media (max-width: 400px) {
+  .coreteam__imner {
     padding: 70px 0px 100px 0px;
   }
-  .modal__wrapper-svg{
+
+  .modal__wrapper-svg {
     right: 10px;
     top: 10px;
   }
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
   .coreteam__tab-box {
     width: 230px;
   }
