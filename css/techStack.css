@@ -1,4 +1,4 @@
-.techStack__illustration-return{
+.techStack__illustration-return {
   position: absolute;
   top: -102px;
   right: 5%;
@@ -7,31 +7,35 @@
   width: 100px;
   opacity: 0;
 }
+
 @keyframes techStack__illustration-return {
   0% {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes techStack__illustration-return {
-  0% {
-    transform: rotate(0deg);
-  }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-.techStack{
+@-webkit-keyframes techStack__illustration-return {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.techStack {
   background-color: rgba(249, 251, 251, 1);
   max-width: 1400px;
   height: 932px;
   margin: 0 auto;
 }
 
-.techStack__illustration{
+.techStack__illustration {
   display: flex;
   align-items: center;
   position: relative;
@@ -39,7 +43,7 @@
   flex-direction: column;
 }
 
-.techStack__phone{
+.techStack__phone {
   position: absolute;
   width: 200px;
   height: 395px;
@@ -48,60 +52,49 @@
   top: 93px;
   transition: all 1s ease-out;
 }
-.techStack__phone-svg{
+
+.techStack__phone-svg {
   position: absolute;
   z-index: 0;
 }
 
-.techStack__illustration{
+.techStack__illustration {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
 }
 
-.techStack__phone-box{
+.techStack__cloud-box,
+.techStack__phone-box {
   position: relative;
   z-index: 1;
   display: flex;
   height: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-.techStack__cloud-box{
-  position: relative;
-  z-index: 1;
-  display: flex;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.techStack__cloud-svg{
+.techStack__cloud-svg {
   position: absolute;
   z-index: 0;
 }
 
-.techStack__screen-box{
+.techStack__screen-box {
   position: relative;
   z-index: 1;
   display: flex;
   width: 100%;
   height: 100%;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 29px;
   text-align: center;
 }
 
-.techStack__tabs{
+.techStack__tabs {
   position: absolute;
   width: 400px;
   height: 260px;
@@ -115,30 +108,31 @@
   cursor: pointer;
 }
 
-.techStack__tabs-tab{
+.techStack__tabs-tab {
   position: relative;
   height: 90px;
 }
 
-.techStack__tabs-tabSvg{
+.techStack__tabs-tabSvg {
   position: absolute;
   z-index: 0;
 }
 
-.techStack__tabs-tabSvgIn{
+.techStack__tabs-tabSvgIn {
   position: absolute;
   z-index: 1;
   top: 25px;
   left: 45px;
 }
-.techStack__tabs-tab:nth-child(3) .techStack__tabs-tabSvgIn{
+
+.techStack__tabs-tab:nth-child(3) .techStack__tabs-tabSvgIn {
   position: absolute;
   z-index: 1;
   top: 25px;
   left: 25px;
 }
 
-.techStack__tabs-tab p{
+.techStack__tabs-tab p {
   position: absolute;
   z-index: 1;
   font-family: Roboto;
@@ -149,7 +143,7 @@
   left: 91px;
 }
 
-.techStack__screen{
+.techStack__screen {
   position: absolute;
   width: 550px;
   height: 340px;
@@ -161,11 +155,11 @@
   transition: all 1s ease-out;
 }
 
-.techStack__screen-svg{
+.techStack__screen-svg {
   position: absolute;
 }
 
-.techStack__cloud{
+.techStack__cloud {
   position: absolute;
   width: 276px;
   height: 174px;
@@ -175,79 +169,79 @@
   cursor: pointer;
 }
 
- .techStack__phone-svg{
+.techStack__phone-svg {
   transition: all 1s ease-out;
 }
 
 .techStack__screen-text,
 .techStack__phone-text,
 .techStack__tabs-text,
-.techStack__cloud-text{
+.techStack__cloud-text {
   opacity: 0;
   position: absolute;
   transition: all 1.5s ease-out;
 }
 
 
-.techStack__tabs:hover .techStack__tabs-tab  .techStack__tabs-tabSvg  rect {
+.techStack__tabs:hover .techStack__tabs-tab .techStack__tabs-tabSvg rect {
   stroke: #1c61bb;
   transition: all 1s ease-out;
 }
 
-.techStack__screen:hover .techStack__screen-svg circle{
+.techStack__screen:hover .techStack__screen-svg circle {
   stroke: #1c61bb;
   transition: all 1s ease-out;
 }
 
-.techStack__screen:hover .techStack__screen-svg rect{
+.techStack__screen:hover .techStack__screen-svg rect {
   stroke: #1c61bb;
   transition: all 1s ease-out;
 }
 
-.techStack__phone:hover .techStack__phone-svg rect{
+.techStack__phone:hover .techStack__phone-svg rect {
   stroke: #1c61bb;
   transition: all 1s ease-out;
 }
 
-.techStack__cloud:hover .techStack__cloud-svg path{
+.techStack__cloud:hover .techStack__cloud-svg path {
   stroke: #1c61bb;
   transition: all 1s ease-out;
 }
 
 /*  */
-.main-cloud .techStack__illustration-return{
+.main-cloud .techStack__illustration-return {
   opacity: 1;
 }
 
-.main-cloud .techStack__cloud{
+.main-cloud .techStack__cloud {
   transform: translate(-29%, 71px) scale(1.1);
 }
 
-.main-cloud .techStack__tabs{
+.main-cloud .techStack__tabs {
   transform: translate(-11%, -8px) scale(0.7);
 }
 
-.main-cloud .techStack__screen{
+.main-cloud .techStack__screen {
   transform: translate(-29%, -73px) scale(0.7);
 }
 
-.main-cloud .techStack__phone{
+.main-cloud .techStack__phone {
   transform: translate(7%, -89px) scale(0.7);
 }
 
-.main-cloud .techStack__phone-box{
+.main-cloud .techStack__phone-box {
   opacity: 0;
 }
 
-.main-cloud .techStack__tabs-tab p{
+.main-cloud .techStack__tabs-tab p {
   opacity: 0;
 }
 
-.main-cloud .techStack__tabs-tabSvgIn{
+.main-cloud .techStack__tabs-tabSvgIn {
   opacity: 0;
 }
 
-.main-cloud .techStack__screen-box{
+.main-cloud .techStack__screen-box {
   opacity: 0;
 }
 
@@ -255,11 +249,11 @@
   opacity: 1;
 }
 
-.main-cloud .techStack__cloud .techStack__cloud-svg path{
+.main-cloud .techStack__cloud .techStack__cloud-svg path {
   stroke: #1c61bb;
 }
 
-.main-cloud .techStack__cloud-text{
+.main-cloud .techStack__cloud-text {
   opacity: 1;
   top: 173px;
   right: 5%;
@@ -267,39 +261,39 @@
 }
 
 /* screen */
-.main-screen .techStack__illustration-return{
+.main-screen .techStack__illustration-return {
   opacity: 1;
 }
 
-.main-screen .techStack__cloud{
+.main-screen .techStack__cloud {
   transform: translate(-173%, 71px) scale(0.7);
 }
 
-.main-screen .techStack__tabs{
+.main-screen .techStack__tabs {
   transform: translate(-11%, 30px) scale(0.7);
 }
 
-.main-screen .techStack__screen{
+.main-screen .techStack__screen {
   transform: translate(44%, -72px) scale(0.9);
 }
 
-.main-screen .techStack__phone{
+.main-screen .techStack__phone {
   transform: translate(34%, -99px) scale(0.7);
 }
 
-.main-screen .techStack__phone-box{
+.main-screen .techStack__phone-box {
   opacity: 0;
 }
 
-.main-screen .techStack__tabs-tab p{
+.main-screen .techStack__tabs-tab p {
   opacity: 0;
 }
 
-.main-screen .techStack__tabs-tabSvgIn{
+.main-screen .techStack__tabs-tabSvgIn {
   opacity: 0;
 }
 
-.main-screen .techStack__screen-box{
+.main-screen .techStack__screen-box {
   opacity: 1;
 }
 
@@ -307,54 +301,54 @@
   opacity: 0;
 }
 
-.main-screen .techStack__screen .techStack__screen-svg circle{
+.main-screen .techStack__screen .techStack__screen-svg circle {
   stroke: #1c61bb;
 }
 
-.main-screen .techStack__screen .techStack__screen-svg rect{
+.main-screen .techStack__screen .techStack__screen-svg rect {
   stroke: #1c61bb;
 }
 
-.main-screen .techStack__screen-text{
+.main-screen .techStack__screen-text {
   opacity: 1;
   top: 338px;
   right: 16%;
 }
 
 /* tabs */
-.main-tabs .techStack__illustration-return{
+.main-tabs .techStack__illustration-return {
   opacity: 1;
 }
 
-.main-tabs .techStack__cloud{
+.main-tabs .techStack__cloud {
   transform: translate(-173%, 71px) scale(0.7);
 }
 
-.main-tabs .techStack__tabs{
+.main-tabs .techStack__tabs {
   transform: translate(-13%, -269px) scale(1);
 }
 
-.main-tabs .techStack__screen{
+.main-tabs .techStack__screen {
   transform: translate(44%, 227px) scale(0.7);
 }
 
-.main-tabs .techStack__phone{
+.main-tabs .techStack__phone {
   transform: translate(34%, -99px) scale(0.7);
 }
 
-.main-tabs .techStack__phone-box{
+.main-tabs .techStack__phone-box {
   opacity: 0;
 }
 
-.main-tabs .techStack__tabs-tab p{
+.main-tabs .techStack__tabs-tab p {
   opacity: 1;
 }
 
-.main-tabs .techStack__tabs-tabSvgIn{
+.main-tabs .techStack__tabs-tabSvgIn {
   opacity: 1;
 }
 
-.main-tabs .techStack__screen-box{
+.main-tabs .techStack__screen-box {
   opacity: 0;
 }
 
@@ -362,11 +356,11 @@
   opacity: 0;
 }
 
-.main-tabs .techStack__tabs .techStack__tabs-tab .techStack__tabs-tabSvg rect{
+.main-tabs .techStack__tabs .techStack__tabs-tab .techStack__tabs-tabSvg rect {
   stroke: #1c61bb;
 }
 
-.main-tabs .techStack__tabs-text{
+.main-tabs .techStack__tabs-text {
   opacity: 1;
   top: 252px;
   right: 11%;
@@ -375,43 +369,43 @@
 }
 
 /* phone */
-.main-phone .techStack__illustration-return{
+.main-phone .techStack__illustration-return {
   opacity: 1;
 }
 
-.main-phone .techStack__cloud{
+.main-phone .techStack__cloud {
   transform: translate(84%, 73px) scale(0.7);
 }
 
-.main-phone .techStack__tabs{
+.main-phone .techStack__tabs {
   transform: translate(-11%, -18px) scale(0.7);
 }
 
-.main-phone .techStack__screen{
+.main-phone .techStack__screen {
   transform: translate(-29%, -73px) scale(0.7);
 }
 
-.main-phone .techStack__phone{
+.main-phone .techStack__phone {
   transform: translate(-139%, -117px) scale(1);
 }
 
-.main-phone .techStack__phone-svg{
+.main-phone .techStack__phone-svg {
   transform: rotate(90deg);
 }
 
-.main-phone .techStack__phone-box{
+.main-phone .techStack__phone-box {
   opacity: 1;
 }
 
-.main-phone .techStack__tabs-tab p{
+.main-phone .techStack__tabs-tab p {
   opacity: 0;
 }
 
-.main-phone .techStack__tabs-tabSvgIn{
+.main-phone .techStack__tabs-tabSvgIn {
   opacity: 0;
 }
 
-.main-phone .techStack__screen-box{
+.main-phone .techStack__screen-box {
   opacity: 0;
 }
 
@@ -419,7 +413,7 @@
   opacity: 0;
 }
 
-.main-phone .techStack__phone-text{
+.main-phone .techStack__phone-text {
   opacity: 1;
   top: 298px;
   width: 134%;
@@ -427,129 +421,144 @@
   right: -13%;
 }
 
-.main-phone .techStack__phone .techStack__phone-svg rect{
+.main-phone .techStack__phone .techStack__phone-svg rect {
   stroke: #1c61bb;
 }
 
-@media (max-width: 1240px){
-  .techStack__phone{
+@media (max-width: 1240px) {
+  .techStack__phone {
     transform: scale(0.7);
   }
-  .techStack__cloud{
+
+  .techStack__cloud {
     right: 28%;
     top: 28px;
     transform: scale(0.7);
   }
-  .techStack__screen{
+
+  .techStack__screen {
     left: -14%;
     top: 88px;
     transform: scale(0.7);
   }
-  .techStack__tabs{
+
+  .techStack__tabs {
     top: 299px;
     right: 22%;
     transform: scale(0.7);
   }
+
   .main-phone .techStack__cloud {
     transform: translate(77%, 55px) scale(0.5);
   }
-  
+
   .main-phone .techStack__tabs {
     transform: translate(3%, -86px) scale(0.5);
   }
-  .main-phone .techStack__screen{
+
+  .main-phone .techStack__screen {
     transform: translate(-7%, -80px) scale(0.4);
   }
-  
-  .main-phone .techStack__phone{
+
+  .main-phone .techStack__phone {
     transform: translate(-49%, -111px) scale(0.6);
   }
-  .main-cloud .techStack__cloud{
+
+  .main-cloud .techStack__cloud {
     transform: translate(3%, 32px) scale(0.7);
   }
-  
-  .main-cloud .techStack__tabs{
+
+  .main-cloud .techStack__tabs {
     transform: translate(3%, -76px) scale(0.5);
   }
-  
-  .main-cloud .techStack__screen{
+
+  .main-cloud .techStack__screen {
     transform: translate(-4%, -89px) scale(0.4);
   }
-  
-  .main-cloud .techStack__phone{
+
+  .main-cloud .techStack__phone {
     transform: translate(41%, -114px) scale(0.5);
   }
+
   /*  */
-  .main-screen .techStack__cloud{
+  .main-screen .techStack__cloud {
     transform: translate(-93%, 39px) scale(0.5);
   }
-  
-  .main-screen .techStack__tabs{
+
+  .main-screen .techStack__tabs {
     transform: translate(0%, -53px) scale(0.5);
   }
-  
-  .main-screen .techStack__screen{
+
+  .main-screen .techStack__screen {
     transform: translate(32%, -81px) scale(0.5);
   }
-  
-  .main-screen .techStack__phone{
+
+  .main-screen .techStack__phone {
     transform: translate(35%, -117px) scale(0.5);
   }
+
   /*  */
-  .main-tabs .techStack__cloud{
+  .main-tabs .techStack__cloud {
     transform: translate(-92%, 41px) scale(0.5);
   }
-  
-  .main-tabs .techStack__tabs{
+
+  .main-tabs .techStack__tabs {
     transform: translate(3%, -263px) scale(0.6);
   }
-  
-  .main-tabs .techStack__screen{
+
+  .main-tabs .techStack__screen {
     transform: translate(33%, 108px) scale(0.4);
   }
-  
-  .main-tabs .techStack__phone{
+
+  .main-tabs .techStack__phone {
     transform: translate(35%, -117px) scale(0.5);
   }
+
   .techStack__illustration {
     margin: 0 auto;
     max-width: 720px;
   }
+
   .techStack {
     height: 820px;
   }
 }
 
-@media (max-width: 810px){
+@media (max-width: 810px) {
   .techStack__illustration {
     margin-left: 50px;
   }
+
   .main-screen .techStack__screen {
     transform: translate(19%, -81px) scale(0.5);
-}
+  }
 }
 
-@media (max-width: 720px){
-  .techStack__phone{
+@media (max-width: 720px) {
+  .techStack__phone {
     right: -11%;
     top: -71px;
     transform: scale(0.4);
   }
-  .techStack__cloud{
+
+  .techStack__cloud {
     right: 2%;
     top: -25px;
     transform: scale(0.4);
   }
-  .techStack__screen{
+
+  .techStack__screen {
     left: -58%;
     top: -39px;
     transform: scale(0.3);
   }
-  .techStack__tabs{
+
+  .techStack__tabs {
     top: 122px;
     right: -20%;
     transform: scale(0.4);
   }
+
   /*  */
   .main-phone .techStack__cloud {
     transform: translate(29%, 209px) scale(0.3);
@@ -558,70 +567,76 @@
   .main-phone .techStack__tabs {
     transform: translate(13%, -72px) scale(0.3);
   }
-  .main-phone .techStack__screen{
+
+  .main-phone .techStack__screen {
     transform: translate(-1%, 87px) scale(0.3);
   }
 
-  .main-phone .techStack__phone{
+  .main-phone .techStack__phone {
     transform: translate(-33%, -73px) scale(0.5);
   }
 
   /*  */
-  .main-cloud .techStack__cloud{
+  .main-cloud .techStack__cloud {
     transform: translate(-2%, -9px) scale(0.7);
   }
 
-  .main-cloud .techStack__tabs{
+  .main-cloud .techStack__tabs {
     transform: translate(18%, -44px) scale(0.3);
   }
 
-  .main-cloud .techStack__screen{
+  .main-cloud .techStack__screen {
     transform: translate(-1%, 129px) scale(0.3);
   }
 
-  .main-cloud .techStack__phone{
+  .main-cloud .techStack__phone {
     transform: translate(8%, 177px) scale(0.3);
   }
+
   /*  */
-  .main-screen .techStack__cloud{
+  .main-screen .techStack__cloud {
     transform: translate(-16%, 173px) scale(0.3);
   }
 
-  .main-screen .techStack__tabs{
+  .main-screen .techStack__tabs {
     transform: translate(-4%, 59px) scale(0.3);
   }
 
-  .main-screen .techStack__screen{
+  .main-screen .techStack__screen {
     transform: translate(10%, -48px) scale(0.4);
   }
 
-  .main-screen .techStack__phone{
+  .main-screen .techStack__phone {
     transform: translate(-14%, 111px) scale(0.3);
   }
+
   /*  */
-  .main-tabs .techStack__cloud{
+  .main-tabs .techStack__cloud {
     transform: translate(16%, 240px) scale(0.3);
   }
 
-  .main-tabs .techStack__tabs{
+  .main-tabs .techStack__tabs {
     transform: translate(-2%, -183px) scale(0.5);
   }
 
-  .main-tabs .techStack__screen{
+  .main-tabs .techStack__screen {
     transform: translate(1%, 108px) scale(0.3);
   }
 
-  .main-tabs .techStack__phone{
+  .main-tabs .techStack__phone {
     transform: translate(9%, 116px) scale(0.3);
   }
+
   .techStack__illustration {
     margin: 0 auto;
     max-width: 320px;
   }
+
   .techStack {
     height: 620px;
   }
-  .techStack__illustration-return{
+
+  .techStack__illustration-return {
     top: -63px;
     right: 37%;
     width: 30px;
