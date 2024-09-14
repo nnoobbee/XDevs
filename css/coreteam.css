@@ -1,14 +1,12 @@
 .coreteam {
-  max-width: 1400px;
-  height: 720px;
   margin: 0 auto;
-  background: rgba(24, 24, 24, 1);
+  max-width: 100%;
+  background-color: var(--general-background-color);
 }
 
 .coreteam__background {
   background: url(../images/Rectangle.png);
   opacity: 1;
-  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -28,15 +26,17 @@
 }
 
 .coreteam__tab {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .coreteam__tab-box {
+  position: static;
+  z-index: 3;
+  background-color: #191919;
   width: 277px;
   height: 320px;
-  border: 1px solid rgba(84, 85, 90, 1);
+  border: 1px solid var(--general-border-color);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -44,6 +44,8 @@
 }
 
 .coreteam__tab-visege {
+  position: static;
+  z-index: 1;
   width: 216px;
   height: 250px;
 }
@@ -56,7 +58,7 @@
 
 .coreteam__tab-subtitle {
   font-size: 18px;
-  color: rgba(84, 85, 90, 1);
+  color: var(--general-border-color);
 }
 
 .overlay {
@@ -127,18 +129,16 @@
 
 .modal__text-name {
   color: #fff;
-  margin: 0;
   margin: 0 0 10px
 }
 
 .modal__text-position {
-  color: rgba(118, 119, 126, 1);
-  margin: 0;
+  color: var(--general-text-gray-color);
   margin: 0 0 30px
 }
 
 .modal__text-description {
-  color: rgba(118, 119, 126, 1);
+  color: var(--general-text-gray-color);
   margin: 0;
 }
 
@@ -167,7 +167,6 @@
   }
 
   .coreteam {
-    height: 950px;
     height: auto;
   }
 }

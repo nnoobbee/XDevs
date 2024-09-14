@@ -33,7 +33,7 @@ body {
   font-weight: 400;
   line-height: 27px;
   color: #303030;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
 }
 
@@ -88,6 +88,12 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+}
+
+li {
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /**

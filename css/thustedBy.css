@@ -1,6 +1,5 @@
 .thustedBy {
   max-width: 1400px;
-  height: 539px;
   margin: 0 auto;
 }
 
@@ -10,8 +9,7 @@
 
 .thustedBy__head-textButn {
   font-size: 18px;
-  line-height: 25.65px;
-  margin-top: -6px;
+  line-height: 6px;
   margin-bottom: 40px;
 }
 
