@@ -1,12 +1,9 @@
 :root {
-
   --general-hover-color: #2947A9;
   --general-border-color: rgba(84, 85, 90, 1);
   --general-background-color: rgba(24, 24, 24, 1);
   --general-text-gray-color: rgba(118, 119, 126, 1);
 }
-
-/* color: var(--general-text-gray-color); */
 
 .container_stripe,
 .container_stripe-black {

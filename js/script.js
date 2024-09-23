@@ -2,21 +2,35 @@ const form = document.querySelector(".techStack__illustration");
 const overlayOn = document.querySelector(".overlayOn");
 const overlayCoreteamForm = document.querySelector(".coreteam__tabs");
 
-overlayCoreteamForm.addEventListener('click', (event) => {
-  switch (event.target.dataset.action){
-    case ('team-1'): 
-      overlayShow("images/team-1.svg", "Andrew Whalle","Founder of company","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-    break;
-    case ('team-2'): 
-      overlayShow("images/team-2.svg", "Valentina Dialektova","UX/ UI Designer","text 2");
-    break;
-    case ('team-3'): 
-      overlayShow("images/team-3.svg", "Vitaliy Sokolov","Developer","text 3");
-    break;
-    case ('team-4'): 
-      overlayShow("images/team-4.svg", "Viktoria Moroz","Copywriter","text 4");
-    break;  
+const mapObjct = {
+  'team-1': {
+    srcImjlink: 'images/team-1.svg',
+    overlayName: 'Andrew Whalle',
+     overlayPosition: '"Founder of company', 
+     overlayText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },
+  'team-2': {
+    srcImjlink: 'images/team-2.svg',
+    overlayName: 'Valentina Dialektova',
+     overlayPosition: 'UX/ UI Designer', 
+     overlayText: 'text 2',
+  },
+  'team-3': {
+    srcImjlink: 'images/team-3.svg',
+    overlayName: 'Vitaliy Sokolov',
+     overlayPosition: 'Developer', 
+     overlayText: 'text 3',
+  },  
+  'team-4': {
+    srcImjlink: 'images/team-1.svg',
+    overlayName: 'Viktoria Moroz',
+     overlayPosition: 'Copywriter', 
+     overlayText: 'text 4',
   }
+}
+
+overlayCoreteamForm.addEventListener('click', (event) => {
+  overlayShow(mapObjct[event.target.dataset.action])
 })
 
 const swiper = new Swiper('.swiper', {
@@ -44,33 +58,32 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-
 form.addEventListener('click', (event) => {
   let taskss = ['main-phone','main-tabs','main-screen','main-cloud'];
+  if (['techStack-return','techStack-phone','techStack-tabs','techStack-screen','techStack-cloud'].includes(event.target.dataset.action)) {
+    taskss.forEach((element) => form.classList.remove(element));
+  }
+  // можно создать обьект, обращаться по обьекту
+  // можно присвоить одинаковые имена датаэкшн и классу 
   switch (event.target.dataset.action){
     case ('techStack-phone'): 
-      taskss.forEach((element) => form.classList.remove(element));
       form.classList.add('main-phone');
     break;
     case ('techStack-tabs'): 
-      taskss.forEach((element) => form.classList.remove(element));
       form.classList.add('main-tabs');
     break;
     case ('techStack-screen'): 
-      taskss.forEach((element) => form.classList.remove(element));
       form.classList.add('main-screen');
     break;
     case ('techStack-cloud'): 
-      taskss.forEach((element) => form.classList.remove(element));
       form.classList.add('main-cloud'); 
     break;
-    case ('techStack-return'): 
-    taskss.forEach((element) => form.classList.remove(element));
+    default:
     break;
   }
 })
 
-function overlayShow(srcImjlink, overlayName, overlayPosition, overlayText) {
+function overlayShow(mapObjct) {
   const tastHTML = `
   <div class="overlay">
   <div class="modal__overlay"></div>
@@ -80,13 +93,13 @@ function overlayShow(srcImjlink, overlayName, overlayPosition, overlayText) {
       <div class="cr__modal">
         <div class="coreteam__tab-box">
           <div class="coreteam__tab-visege">
-            <img src="${srcImjlink}" alt="" class="">
+            <img src="${mapObjct.srcImjlink}" alt="" class="">
           </div>
         </div>
         <div class="modal__text">
-          <p class="modal__text-name">${overlayName}</p>
-          <p class="modal__text-position">${overlayPosition}</p>
-          <p class="modal__text-description">${overlayText}</p>
+          <p class="modal__text-name">${mapObjct.overlayName}</p>
+          <p class="modal__text-position">${mapObjct.overlayPosition}</p>
+          <p class="modal__text-description">${mapObjct.overlayText}</p>
         </div>
       </div>
     </div>
